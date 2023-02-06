@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KouSpace Anasayfa</title>
+    <link rel="stylesheet" href="Assets/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+    </script>
+    <script src="https://kit.fontawesome.com/5a4d51e004.js" crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka+One&family=Londrina+Outline&family=Permanent+Marker&family=Rubik+Vinyl&family=Unbounded:wght@300;400;500;600;700;800&family=Zen+Dots&display=swap');
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-nav fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-bold" href="Index.html" id="navTextKouspace"> <img
+                    src="Assets/img/kouspace_logo.png" alt="" id="navLogoKouspace">
+                KouSpace</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <ul class="navbar-nav d-flex align-items-center justify-content-center">
+                    <li>
+                        <a class="nav-link active mx-1" aria-current="page" href="Index.html"> <i
+                                class="fa-solid fa-igloo"></i> Anasayfa </a>
+                    </li>
+                    <li>
+                        <a class="nav-link mx-1" href="rockets.html"> <i class="fa-solid fa-rocket"></i> Roketler
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link mx-1" href="works.html"> <i class="fa-solid fa-briefcase"></i> Çalışmalar
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link mx-1" href="sponsor.html"> <i class="fa-solid fa-handshake"></i>
+                            Sponsorlar
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link mx-1" href="about.html"> <i class="fa-solid fa-circle-info"></i> Takım
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link mx-1" href="contact.html"> <i class="fa-solid fa-phone-volume"></i> İletişim
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="d-flex justify-content-center align-items-center" id="main-photo">
+            <div class="black-50"></div>
+
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div id="main-text" class="">
+                        <h1 class="fw-bolder display-4"> KouSpace</h1>
+                        <p class="ms-4">Tam 3 yıldır, <br>
+                            <span class="ms-3">Boynumuzda tatlı bir ağrı,</span> <br>
+                            <span class=""> hep göklere bakmaktan.. :)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about-us">
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="about-us-text">
+                        <h1> Hakkımızda</h1>
+                        <p> Kocaeli Üniversitesi Mühendis Beyinler Kulübü KouSpace Havacılık ve Uzay Topluluğu olarak
+                            2019 yılında kurulmuş olan takımımız roket sistemleri üzerine araştırma yapan öğrencilerden
+                            oluşmaktadır. Milli Teknoloji Hamlesi ruhuyla Türkiye'nin Savunma Sanayi teknolojilerine
+                            dahil olarak çıktığımız bu yolda yerli roket alt sistemleri tasarlamak, geliştirmek, üretmek
+                            amacıyla çalışmalara devam etmekteyiz. Orta ve büyük ölçekli teknik projeler
+                            gerçekleştirerek Savunma Sanayi alanında deneyimli mühendisler olma yolunda katıldığımız
+                            yarışmalar sayesinde dinamik bir şekilde ilerlemekteyiz. Geçtiğimiz yıllarda Şafak,
+                            Airbender, Yadigar, Firebender, Yankı isimli roketlerimiz ile başarılı bir şekilde temsil
+                            etmiş olup çeşitli dereceler elde etmişlerdir. Bu yılda yeni roketlerimiz ile birlikte
+                            Teknofest maceramıza emin adımlarla devam etmekteyiz.</p>
+                        <!-- <div class="row">
+                            <div class="col-lg-7">
+                                <p>Katıldığımız Yarışmalar:
+                                <ul>
+                                    <li>2019-2020 Teknofest Orta İrtifa Roket Yarışması</li>
+                                    <li>2020-2021 Teknofest Orta İrtifa Roket Yarışması</li>
+                                    <li>2021-2022 Teknofest Dikey İnişli Roket Yarışması</li>
+                                    <li>2021-2022 Teknofest Orta İrtifa Roket Yarışması</li>
+                                    <li>2022-2023 Teknofest Dikey İnişli Roket Yarışması</li>
+                                    <li>2022-2023 Teknofest Orta İrtifa Roket Yarışması</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="col-lg-1 d-flex justify-content-center align-items-center"><i
+                                    class="fa-solid fa-chevron-right"></i></div>
+                            <div class="col-lg-4">
+                                <p>Takımımız bu yarışmalarda her yıl finalist takımlar arasında yer almış olmasının
+                                    yanında,tüm değerlendirmeler sonucu 2021-2022 yılında Türkiye 4.cülüğü,
+                                    raporlama aşamalarında ise birkaç kez 1. liğin yanında bir çok kez ilk 10 da yer
+                                    almayı başarmıştır </p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1">
+                    <div class="about-us-photo"><img class="img-fluid" src="Assets/img/main-photo.jpg" alt="">
+                    </div>
+                </div>
+                <h1 class="text-center mb-0 mt-3">Sponsorlarımız</h1>
+                <div class="d-flex align-items-end justify-content-center">
+                    <div class="sponsors-container">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="Assets/img/Sponsors/cet.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/img/Sponsors/ankaflex.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/img/Sponsors/asis.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/img/Sponsors/bolgemakina.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/img/Sponsors/bulutmakina.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/img/Sponsors/derby.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/img/Sponsors/kbb.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/img/Sponsors/kologlu.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/img/Sponsors/kilavuz.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/img/Sponsors/kordsa.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/img/Sponsors/eta.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/img/Sponsors/fiberflex.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/img/Sponsors/hidro.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/img/Sponsors/igdas.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/img/Sponsors/ottoreklam.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/img/Sponsors/pnosan.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/img/Sponsors/protek.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/img/Sponsors/soldex.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/img/Sponsors/sadikoglu.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/img/Sponsors/tek.png" />
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="support-us">
+        <div id="supportPhoto">
+            <div class="container mx-auto" id="support-text">
+                <h1>Bize Destek Olarak Şirket Logonuzu Uzaya Göndermek İster misiniz?..</h1>
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 col-sm-6 px-4">
+                        <p>Roketimiz kalkmak üzere logonuzu uzaya göndermek için hemen bizle iletişime geçin.</p>
+                        <a class="btn"> İletişime Geç </a>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 col-sm-6 px-4">
+                        <p>Aşağıda bulunan butona tıklayarak sponsorlar sayfasını inceleyebilirsiniz.</p>
+                        <a class="btn" href="#contact"> Sponsorlar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="" id="contact">
+        <div class="container">
+            <div class="contact-header">
+                <h2> İLETİSİM </h2>
+                <p class="py-2"> Bizimle iletişime geçmek için lütfen aşağıdaki formu doldurunuz,
+                    teşekkürler...</p>
+            </div>
+
+            <div class="col-xl-8 col-lg-9 col-md-10 contact-form">
+                <form class="fw-bold">
+
+                    <div class="adSoyad">
+                        <input type="text" placeholder="Adınız" class="form-control">
+                    </div>
+                    <div class="adSoyad">
+                        <input type="text" placeholder="Soyadınız" class="form-control">
+                    </div>
+                    <div class="">
+                        <input type="email" placeholder="ornek@gmail.com" class="form-control">
+                    </div>
+                    <div class="">
+                        <input type="text" placeholder="Kısaca konu başlığı belirtiniz" class="form-control">
+                    </div>
+                    <div class="">
+                        <textarea type="text" class="form-control" rows="7"
+                            placeholder="Mesajınızı yazınız..."></textarea>
+                    </div>
+                    <div class="d-flex justify-content-center pt-4 pb-3">
+                        <button type="submit" class="btn btn-dark rounded-pill py-1 px-4 fs-5 fw-bold"> Gönder
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-2">
+        <div class="container">
+            <div class="row my-1">
+                <div class="col-lg-4">
+                    <div class="footer-logo">
+                        <img src="Assets/img/kouspace.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-menu">
+                        <ul class="flex-column">
+                            <li><a href=""><i class="fa-solid fa-igloo"></i> Anasayfa</a></li>
+                            <li><a href=""><i class="fa-solid fa-rocket"></i> Roketler</a></li>
+                            <li><a href=""><i class="fa-solid fa-handshake"></i> Sponsorlar</a></li>
+                            <li><a href=""><i class="fa-solid fa-circle-info"></i> Takım</a></li>
+                            <li><a href=""><i class="fa-solid fa-phone-volume"></i> İletişim</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-info">
+                        <ul>
+                            <li>Mail: kouspace@gmail.com</li>
+                            <li>Telefon: +90 534 414 6970</li>
+                            <li>Adres: Sanayi, Ömer Türkçakal Blv. No:36, 41040 İzmit/Kocaeli</li>
+                        </ul>
+                        <div class="fa-2x" id="social-media-icons">
+                            <a href="https://instagram.com/kouspace"> <i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/mbk-kouspace-roket-takimi"> <i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://twitter.com/kou_space"> <i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="https://www.youtube.com/@mbkkouspacerokettakm9166"> <i
+                                    class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright-text">
+            <p> Copyright @2022 KouSpace Roket Takımı | Tüm Hakları Saklıdır. | Designed by Dolunay Pazarci</p>
+        </div>
+    </footer>
+
+
+    <!-- <section id="hero" class="">
+        <div class="position relative h-75 display-flex justify-content-center align-items-center">
+            <video class="main-vid" autoplay muted loop>
+                <source src="img/main.mp4" type="video/mp4">
+            </video>
+            <div class="position-absolute justify-content-center align-items-center d-flex flex-column video-text">
+                <h1 class="mb-1 mt-2">Hakkımızda</h1>
+                <hr>
+                <p class="my-4 px-4 py-3">
+                    Kocaeli Üniversitesi Mühendis Beyinler Kulübü KouSpace Havacılık ve Uzay Topluluğu olarak 2019
+                    yılında kurulmuş olan takımımız roket sistemleri üzerine araştırma yapan öğrencilerden oluşmaktadır.
+                    Milli Teknoloji Hamlesi ruhuyla Türkiye'nin Savunma Sanayi teknolojilerine dahil olarak çıktığımız
+                    bu yolda yerli roket alt sistemleri çalışmalarımıza devam etmekteyiz. Takımımızı geçtiğimiz
+                    yarışmalarda ŞAFAK, AIRBENDER, YADİGAR, FIREBENDER ve YANKI ile başarılı bir şekilde temsil etmiş
+                    olup çeşitli dereceler elde ettik. Bu yılda yeni roketlerimiz ile milli teknolojiye katkı vermeye
+                    devam ediyoruz.
+                </p>
+            </div>
+        </div>
+    </section> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="Assets/js/main.js"></script>
+    <script src="Assets/Bootstrap/bootstrap.min.js"></script>
+
+</body>
+
+</html>

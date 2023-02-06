@@ -1,0 +1,383 @@
+@import url("https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css");
+
+body {
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/** ------> Preloader start **/
+
+#preloader {
+    background: black url(img/preloader.gif) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1031;
+}
+
+/** ------> Preloader finish **/
+
+/** ------> NavBar start **/
+.bg-nav {
+    background: transparent;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.8));
+    box-shadow: 0 0 10px 0.5px rgba(47, 47, 47, 0.8);
+}
+
+.navbar {
+    transition: all 750ms;
+}
+
+.navbar-scrolled {
+    background-color: rgba(10, 10, 10, 0.85);
+}
+
+nav {
+    padding: 3px 0px !important;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+}
+
+nav a i {
+    margin-right: 0.25em;
+}
+
+#navLogoKouspace {
+    width: 48px;
+    height: 48px;
+    transition: 1s all;
+    margin-right: 8px;
+    filter: drop-shadow(0 0 2px #989e9f);
+}
+
+#navTextKouspace {
+    transition: 1s all;
+}
+
+#navTextKouspace:hover {
+    scale: 1.05;
+    filter: brightness(1.05) drop-shadow(0 0 1px black);
+    letter-spacing: 0.01em;
+}
+
+/** ------> NavBar finish **/
+
+/** ------> hero start **/
+#main-photo {
+    background: url(../img/main-photo.jpg) center;
+    background-size: cover;
+    padding: 60px 0px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    overflow: hidden;
+    background-attachment: fixed
+}
+
+.black-50 {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+#main-text {
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: larger;
+    font-weight: 900;
+    position: relative;
+    z-index: 1;
+}
+
+#main-text h1 {
+    letter-spacing: 0.5em;
+}
+
+#main-text p :nth-child(4) {
+    margin-left: 3.5rem !important;
+}
+
+/** ------> hero end **/
+
+/** ------> sponsors start**/
+#about-us {
+    display: flex;
+    overflow: hidden;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.95);
+    font-family: "Open Sans", sans-serif;
+    color: rgba(0, 0, 0, 0.9);
+    font-style: italic;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.9));
+}
+
+.about-us-text {
+    margin-right: 0.25rem;
+    text-align: center;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.col-lg-7:has(.about-us-text) {
+    display: flex;
+    align-items: center;
+}
+
+#about-us h1 {
+    font-weight: 700;
+}
+
+.about-us-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
+}
+
+.about-us-photo img {
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.sponsors-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 185px;
+    height: 160px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+    padding: 0px 5px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 80%;
+    height: 65%;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+    background-image: none;
+}
+
+/** ------> sponsors end **/
+
+
+/** ------> support-us start **/
+
+#supportPhoto {
+    background: linear-gradient(105deg, rgba(9, 9, 9, 0.8) 0%, rgba(92, 161, 196, 0.6) 15%, rgba(0, 0, 0, 0.78) 100%), url('../img/contact-us.jpg') bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    overflow: hidden;
+    z-index: 0;
+    background-attachment: fixed;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.9));
+
+}
+
+#support-text {
+    padding: 1rem 0rem;
+    margin: 0.5rem 0rem;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+#support-text h1 {
+    margin: 1rem 0rem;
+    padding: 1rem 0rem;
+
+}
+
+#support-text a {
+    padding: 0.5rem;
+    margin: 2rem;
+    font-weight: 700;
+    font-size: large;
+    border-radius: 4px !important;
+}
+
+#support-text a.btn {
+    border-radius: 0px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+/** ------> support-us end**/
+
+/** ------> contact-us start**/
+#contact {
+    font-family: "Open Sans", sans-serif;
+    color: rgb(0, 0, 0);
+    padding: 1rem 0rem;
+    background-color: white;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.8));
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin: 1rem 0rem;
+}
+
+/* .adSoyad input{
+    margin: 0rem !important;
+} */
+
+.contact-header {
+    padding-top: 0.5rem;
+    text-align: center;
+    font-size: medium;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.contact-header h2 {
+    font-weight: 800 !important;
+}
+
+.contact-form {
+    margin-inline: auto;
+}
+
+/** ------> contact-us end**/
+
+
+/** ------> footer start **/
+
+footer a {
+    color: white;
+}
+
+.footer {
+    background: rgba(255, 255, 255, 0)
+}
+
+.footer-menu,
+.footer-info {
+    display: flex;
+    height: 100%;
+    opacity: 0.75;
+    color: white;
+}
+
+.footer-info {
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-info li {
+    margin: 0.5rem 0rem;
+}
+
+.footer-info ul {
+    margin-bottom: 0px;
+}
+
+.footer-menu {
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-menu li {
+    margin: 0.5rem 0rem;
+}
+
+.footer-menu a {
+    transition: all 500ms;
+}
+
+.footer-menu a:hover {
+    opacity: 1;
+    color: rgb(240, 162, 89);
+}
+
+.footer-menu li a i {
+    margin-right: 5px;
+
+}
+
+#social-media-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#social-media-icons a i {
+    text-decoration: none;
+    padding: 0rem 0.5rem;
+    margin: 0rem 0.5rem;
+    color: white;
+    opacity: 0.75;
+    transition: all 500ms;
+}
+
+#social-media-icons a i:hover {
+    color: rgb(240, 162, 89);
+    transform: scale(1.08);
+    opacity: 1;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-logo :nth-child(1) {
+    width: 85%;
+}
+
+.copyright-text {
+    font-size: 0.6em;
+    width: 100%;
+    margin: 1rem 0rem 0rem 0rem;
+    font-weight: 500;
+    opacity: 0.75;
+    color: white;
+    text-align: center;
+}
+
+/** ------> footer end **/
