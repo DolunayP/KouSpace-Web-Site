@@ -50,3 +50,18 @@ if (selectNavbar) {
     window.addEventListener('load', navbarScrolled)
     onscroll(document, navbarScrolled)
 }
+
+
+
+let selectAnimation = document.querySelectorAll('.hidden-right, .hidden-left, .hidden-top, .hidden-bottom, .hidden-z');
+const showAnimate = () => {
+    const triggerBottom = window.innerHeight / 1.5 * 1.4
+    selectAnimation.forEach((items) => {
+        const itemsTop = items.getBoundingClientRect().top;
+        if (itemsTop < triggerBottom) {
+            items.classList.add('show');
+        } else { items.classList.remove('show') }
+    })
+}
+
+window.addEventListener('scroll', showAnimate);

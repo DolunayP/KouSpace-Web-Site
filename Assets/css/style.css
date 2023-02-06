@@ -23,7 +23,7 @@ li {
     z-index: 1031;
 }
 
-/** ------> Preloader finish **/
+/** ------> Preloader end**/
 
 /** ------> NavBar start **/
 .bg-nav {
@@ -71,7 +71,7 @@ nav a i {
     letter-spacing: 0.01em;
 }
 
-/** ------> NavBar finish **/
+/** ------> NavBar end **/
 
 /** ------> hero start **/
 #main-photo {
@@ -259,10 +259,6 @@ nav a i {
     margin: 1rem 0rem;
 }
 
-/* .adSoyad input{
-    margin: 0rem !important;
-} */
-
 .contact-header {
     padding-top: 0.5rem;
     text-align: center;
@@ -381,3 +377,44 @@ footer a {
 }
 
 /** ------> footer end **/
+
+/** ------> Scroll animation start **/
+
+.hidden-left {
+    transform: translateX(-200%);
+    transition: transform 0.8s, opacity 1s;
+    opacity: 0.1;
+}
+
+.hidden-right {
+    transform: translateX(200%);
+    transition: transform 0.8s, opacity 1s;
+    opacity: 0.1;
+}
+
+.hidden-top {
+    transform: translateY(-40%);
+    transition: transform 0.8s, opacity 1s;
+    opacity: 0;
+}
+
+.hidden-bottom {
+    transform: translateY(70%);
+    transition: transform 0.8s, opacity 1s;
+    opacity: 0.05;
+}
+
+.hidden-z {
+    transform: scale(0.5);
+    transition: transform 1s, opacity 1s;
+    opacity: 0;
+}
+
+
+.show {
+    transform: translate(0%, 0%) scale(1);
+    opacity: 1;
+}
+
+
+/** ------> Scroll animation end **/
