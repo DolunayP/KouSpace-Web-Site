@@ -418,3 +418,122 @@ footer a {
 
 
 /** ------> Scroll animation end **/
+/* ! HOMEPAGE END */
+
+/* ! SPONSORS PAGE START */
+
+/** -------> Sponsorship info start **/
+#sponsorship-info {
+    padding-top: 68px;
+    overflow: hidden;
+    background: url(../img/Sponsors/sponsorship-bg.jpeg) left center;
+    display: flex;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sponsorship-bg {
+    background: url(../img/Sponsors/sponsorship-bg.png) no-repeat center;
+    display: flex;
+    background-attachment: fixed;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-size: cover;
+}
+
+#sponsorship-info .container h1 {
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 14px;
+    margin-top: 16px;
+    letter-spacing: 2px;
+    filter: contrast(1.5) brightness(1.5) drop-shadow(0 0 2px rgba(0, 0, 0, 0.9));
+    color: aliceblue;
+}
+
+.sponsorship-small-icon {
+    position: absolute;
+    width: 35%;
+    height: auto;
+    left: -5%;
+    bottom: -5%;
+    transform: rotate(-30deg);
+    z-index: -1;
+    filter: opacity(0.8) brightness(0.5);
+}
+
+.sponsorship-info-boxes {
+    position: relative;
+    display: flex !important;
+    flex-direction: column;
+    text-align: right;
+    justify-content: center;
+    background: rgba(192, 192, 192, 0.55);
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 1.5em;
+    border-radius: 1em;
+    box-shadow: 0 0 12px 1px rgba(47, 47, 47, 0.8);
+}
+
+.sponsorship-info ul {
+    margin-bottom: 0px;
+}
+
+
+/** -------> Sponsorship info end **/
+
+/** -------> Sponsors start **/
+#sponsors {
+    position: relative;
+    background-color: white;
+    padding: 2rem;
+    overflow-x: hidden;
+
+}
+
+
+#sponsors .container .row div {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#sponsors .container h1 {
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 24px;
+    letter-spacing: 10px;
+    filter: brightness(1.5) drop-shadow(0 0 10px rgba(7, 7, 7, 0.9));
+    color: rgb(19, 27, 58);
+}
+
+#sponsors img {
+    width: 80%;
+    height: 70%;
+    min-width: 48px;
+    min-height: 36px;
+    margin: 4px;
+}
+
+
+/** -------> Sponsors start **/
+
+/* ! SPONSORS PAGE END  */
+
+/* ! Contact Page start  */
+/** -------> Contact form start **/
+
+
+/** -------> Contact form end**/
+
+/* ! Contact Page end  */

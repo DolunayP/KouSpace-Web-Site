@@ -63,5 +63,5 @@ const showAnimate = () => {
         } else { items.classList.remove('show') }
     })
 }
-
+window.addEventListener('load', showAnimate);
 window.addEventListener('scroll', showAnimate);
