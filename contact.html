@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="Assets/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+    </script>
+    <script src="https://kit.fontawesome.com/5a4d51e004.js" crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka+One&family=Londrina+Outline&family=Permanent+Marker&family=Rubik+Vinyl&family=Unbounded:wght@300;400;500;600;700;800&family=Zen+Dots&display=swap');
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-nav fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-bold" href="Index.html" id="navTextKouspace"> <img
+                    src="Assets/img/kouspace_logo.png" alt="" id="navLogoKouspace">
+                KouSpace</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <ul class="navbar-nav d-flex align-items-center justify-content-center">
+                    <li>
+                        <a class="nav-link active mx-1" aria-current="page" href="Index.html"> <i
+                                class="fa-solid fa-igloo"></i> Anasayfa </a>
+                    </li>
+                    <li>
+                        <a class="nav-link mx-1" href="rockets.html"> <i class="fa-solid fa-rocket"></i> Roketler
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link mx-1" href="sponsor.html"> <i class="fa-solid fa-handshake"></i>
+                            Sponsorlar
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link mx-1" href="team.html"> <i class="fa-solid fa-people-group"></i> Takım
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link mx-1" href="contact.html"> <i class="fa-solid fa-phone-volume"></i> İletişim
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="contact-bg"></div>
+    <section id="contact-form">
+        <div class="container hidden-z">
+            <div class="contact-header">
+                <h1> İLETİŞİM </h1>
+                <p> Bizimle iletişime geçmek için lütfen aşağıdaki formu doldurunuz,
+                    teşekkürler...</p>
+            </div>
+            <div class="col-xl-8 col-lg-9 col-md-10 col contact-form">
+                <form class="fw-bold fs-5">
+                    <div class="isim-box">
+                        <div>
+                            <input type="text" placeholder="Adınız" class="form-control">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Soyadınız" class="form-control">
+                        </div>
+                    </div>
+                    <div>
+                        <input type="email" placeholder="ornek@gmail.com" class="form-control">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Kısaca konu başlığını belirtiniz" class="form-control">
+                    </div>
+                    <div>
+                        <textarea type="text" class="form-control" rows="7"
+                            placeholder="Mesajınızı yazınız..."></textarea>
+                    </div>
+                    <div class="submit-button">
+                        <button type="submit" class="btn btn-light rounded-pill">
+                            Gönder
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="social-media-buttons">
+        <div class="container hidden-bottom">
+            <h1>Sosyal Medya Hesaplarımızdan Bize Ulaşabilirsiniz</h1>
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 hid">
+                    <a href="https://instagram.com/kouspace">
+                        <i class="fa-brands fa-3x fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <a href="https://www.linkedin.com/company/mbk-kouspace-roket-takimi">
+                        <i class="fa-brands fa-3x fa-linkedin"></i>
+                        <span>Linkedin</span>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <a href="https://twitter.com/kou_space">
+                        <i class="fa-brands fa-3x fa-square-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <a href="https://www.youtube.com/@mbkkouspacerokettakm9166">
+                        <i class="fa-brands fa-3x fa-youtube"></i>
+                        <span> Youtube</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location">
+        <div class="google-maps">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1RqlgfP_kSd9WWoUQ9wpqpqSc9qCjwH0&ehbc=2E312F">
+            </iframe>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row my-1">
+                <div class="col-lg-4">
+                    <div class="footer-logo">
+                        <img src="Assets/img/kouspace.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-menu">
+                        <ul class="flex-column">
+                            <li><a href=""><i class="fa-solid fa-igloo"></i> Anasayfa</a></li>
+                            <li><a href=""><i class="fa-solid fa-rocket"></i> Roketler</a></li>
+                            <li><a href=""><i class="fa-solid fa-handshake"></i> Sponsorlar</a></li>
+                            <li><a href=""><i class="fa-solid fa-circle-info"></i> Takım</a></li>
+                            <li><a href=""><i class="fa-solid fa-phone-volume"></i> İletişim</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-info">
+                        <ul>
+                            <li>Mail: kouspace@gmail.com</li>
+                            <li>Telefon: +90 534 414 6970</li>
+                            <li>Adres: Sanayi, Ömer Türkçakal Blv. No:36, 41040 İzmit/Kocaeli</li>
+                        </ul>
+                        <div class="fa-2x" id="social-media-icons">
+                            <a href="https://instagram.com/kouspace"> <i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/mbk-kouspace-roket-takimi"> <i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://twitter.com/kou_space"> <i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="https://www.youtube.com/@mbkkouspacerokettakm9166"> <i
+                                    class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright-text">
+            <p> Copyright @2022 KouSpace Roket Takımı | Tüm Hakları Saklıdır. | Designed by Dolunay Pazarci</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="Assets/js/main.js"></script>
+    <script src="Assets/Bootstrap/bootstrap.min.js"></script>
+</body>
+
+</html>

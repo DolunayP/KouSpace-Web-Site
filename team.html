@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takım</title>
+    <link rel="stylesheet" href="Assets/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+    </script>
+    <script src="https://kit.fontawesome.com/5a4d51e004.js" crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka+One&family=Londrina+Outline&family=Permanent+Marker&family=Rubik+Vinyl&family=Unbounded:wght@300;400;500;600;700;800&family=Zen+Dots&display=swap');
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-nav fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-bold" href="Index.html" id="navTextKouspace"> <img
+                    src="Assets/img/kouspace_logo.png" alt="" id="navLogoKouspace">
+                KouSpace</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <ul class="navbar-nav d-flex align-items-center justify-content-center">
+                    <li>
+                        <a class="nav-link active mx-1" aria-current="page" href="Index.html"> <i
+                                class="fa-solid fa-igloo"></i> Anasayfa </a>
+                    </li>
+                    <li>
+                        <a class="nav-link mx-1" href="rockets.html"> <i class="fa-solid fa-rocket"></i> Roketler
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link mx-1" href="sponsor.html"> <i class="fa-solid fa-handshake"></i>
+                            Sponsorlar
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link mx-1" href="team.html"> <i class="fa-solid fa-people-group"></i> Takım
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link mx-1" href="contact.html"> <i class="fa-solid fa-phone-volume"></i> İletişim
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="team">
+        <div class="bg-container">
+            <img class="team-bg-left" src="Assets/img/side.jpeg">
+            <img class="team-bg-right" src="Assets/img/side.jpeg"> </team-bg-right>
+        </div>
+        <div class="container">
+            <div class="team-header hidden-z">
+                <h1>MENTORLAR</h1>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box hidden-left">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/omer.jpg" alt="">
+                            <span>
+                                Ömer Faruk Kahraman
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Mekatronik Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2019</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box hidden-top">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/mehmet.jpg" alt="">
+                            <span>
+                                Mehmet Emin Sezer
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Mekatronik Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2019</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box hidden-right">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/dolunay.jpg" alt="">
+                            <span>
+                                Dolunay
+                                Pazarcı
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Metalurji ve Malzeme Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box hidden-z">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/jafer.jpg" alt="">
+                            <span>Jaufar Sadique Rifaii</span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Makine Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-header hidden-z">
+                <h1>KURTARMA</h1>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box hidden-left">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/batu.jpg" alt="">
+                            <span>
+                                Batuhan Dede
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Mekatronik Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box hidden-right">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/cabri.jpg" alt="">
+                            <span>
+                                Sümeyra Cabri
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Mekatronik Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-header hidden-z">
+                <h1>MEKANIK</h1>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box hidden-left">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/burak.jpg" alt="">
+                            <span>
+                                Burak Tabanca
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Makine Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box hidden-right">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/unknown-m.png" alt="">
+                            <span> Tunahan
+                                Budak
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Makine Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2022</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="team-header hidden-z">
+                <h1>YAPISAL</h1>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box hidden-left">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/sevval.jpg" alt="">
+                            <span>
+                                Şevval
+                                Demirtaş
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Metalurji ve Malzeme Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box hidden-right">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/unknown-m.png" alt="">
+                            <span> Aykut Türkoğlu
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Metalurji ve Malzeme Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-header hidden-z">
+                <h1>AVIYONIK</h1>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box hidden-left">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/melih.jpg" alt="">
+                            <span>
+                                Melih Varlı
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Elektronik Haberleşme Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box hidden-z">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/muratcan.jpg" alt="">
+                            <span>
+                                Muratcan Mutlu
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Mekatronik Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box hidden-right">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/unknown-m.png" alt="">
+                            <span> Osman Okumuş
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Mekatronik Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box hidden-left">
+                    <div class="person-card">
+                        <div class="card-front"><img class="unknown-fimg-fluid" src="../KouSpace/imgabout/unknown-f.png"
+                                alt="">
+                            <span>
+                                Hazel Küpe
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Mekatronik Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box hidden-right">
+                    <div class="person-card">
+                        <div class="card-front"><img class="unknown-fimg-fluid" src="../KouSpace/imgabout/unknown-f.png"
+                                alt="">
+                            <span>
+                                Hayat Öz
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Biyomedikal Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-header hidden-z">
+                <h1>PARASUTLER</h1>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box hidden-z">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/sude.jpg" alt="">
+                            <span>
+                                Sudenaz Kavak
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Biyomedikal Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-header hidden-z">
+                <h1>Sponsorluk</h1>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box hidden-z">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/sude.jpg" alt="">
+                            <span>
+                                Nadiye Özen Yuvanç </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Endüstri Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-header hidden-z">
+                <h1>MAZİ</h1>
+            </div>
+            <div class="row hidden-z">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/berk.jpg" alt="">
+                            <span>
+                                Berkcan Asatekin
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Mekatronik Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2019</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box">
+                    <div class="person-card">
+                        <div class="card-front"><img class="unknown-fimg-fluid" src="../KouSpace/imgabout/unknown-f.png"
+                                alt="">
+                            <span>Gamzenur Özyörükoğulları</span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Biyomedikal Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2019</p>
+                            <h4>Ayrılma Yılı</h4>
+                            <p>2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/unknown-m.png" alt="">
+                            <span> Ahmet Azboy
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Mekatronik Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2019</p>
+                            <h4>Ayrılma Yılı</h4>
+                            <p>2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box">
+                    <div class="person-card">
+                        <div class="card-front"><img class="unknown-fimg-fluid" src="../KouSpace/imgabout/unknown-f.png"
+                                alt="">
+                            <span>
+                                Melisa Gülpınar
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Biyomedikal Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2019</p>
+                            <h4>Ayrılma Yılı</h4>
+                            <p>2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/unknown-m.png" alt="">
+                            <span> Anıl Altan Sipahi
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Mekatronik Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2019</p>
+                            <h4>Ayrılma Yılı</h4>
+                            <p>2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box">
+                    <div class="person-card">
+                        <div class="card-front"><img class="unknown-fimg-fluid" src="../KouSpace/imgabout/unknown-f.png"
+                                alt="">
+                            <span>
+                                Ayşenur Özcan
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Elektronik Haberleşme Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2019</p>
+                            <h4>Ayrılma Yılı</h4>
+                            <p>2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/bugra.jpg" alt="">
+                            <span>
+                                Buğra Başaran
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Elektronik Haberleşme Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/hamza.jpg" alt="">
+                            <span>
+                                Hamza Kuru
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Mekatronik Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box">
+                    <div class="person-card">
+                        <div class="card-front"><img class="unknown-fimg-fluid" src="../KouSpace/imgabout/unknown-f.png"
+                                alt="">
+                            <span>
+                                Sahragül Charyyeva
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Elektronik Haberleşme Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2020</p>
+                            <h4>Ayrılma Yılı</h4>
+                            <p>2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/unknown-m.png" alt="">
+                            <span>
+                                Emircan Bilgili
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Mekatronik Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2021</p>
+                            <h4>Ayrılma Yılı</h4>
+                            <p>2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box">
+                    <div class="person-card">
+                        <div class="card-front"><img class="unknown-fimg-fluid" src="../KouSpace/imgabout/unknown-f.png"
+                                alt="">
+                            <span>
+                                Simay Sadak
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Elektronik Haberleşme Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2021</p>
+                            <h4>Ayrılma Yılı</h4>
+                            <p>2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/unknown-m.png" alt="">
+                            <span> Melih
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Makine Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2020</p>
+                            <h4>Ayrılma Yılı</h4>
+                            <p>2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 person-card-box">
+                    <div class="person-card">
+                        <div class="card-front"><img class="img-fluid" src="../KouSpace/imgabout/unknown-m.png" alt="">
+                            <span> Yasin
+                                Şensoy
+                            </span>
+                        </div>
+                        <div class="card-back">
+                            <h4>Bölüm</h4>
+                            <p>Elektronik Haberleşme Mühendisliği</p>
+                            <h4>Takımdaki Görevi</h4>
+                            <p></p>
+                            <h4>Katılma Yılı</h4>
+                            <p>2020</p>
+                            <h4>Ayrılma Yılı</h4>
+                            <p>2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row my-1">
+                <div class="col-lg-4">
+                    <div class="footer-logo">
+                        <img src="Assets/img/kouspace.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-menu">
+                        <ul class="flex-column">
+                            <li><a href=""><i class="fa-solid fa-igloo"></i> Anasayfa</a></li>
+                            <li><a href=""><i class="fa-solid fa-rocket"></i> Roketler</a></li>
+                            <li><a href=""><i class="fa-solid fa-handshake"></i> Sponsorlar</a></li>
+                            <li><a href=""><i class="fa-solid fa-circle-info"></i> Takım</a></li>
+                            <li><a href=""><i class="fa-solid fa-phone-volume"></i> İletişim</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-info">
+                        <ul>
+                            <li>Mail: kouspace@gmail.com</li>
+                            <li>Telefon: +90 534 414 6970</li>
+                            <li>Adres: Sanayi, Ömer Türkçakal Blv. No:36, 41040 İzmit/Kocaeli</li>
+                        </ul>
+                        <div class="fa-2x" id="social-media-icons">
+                            <a href="https://instagram.com/kouspace"> <i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/mbk-kouspace-roket-takimi"> <i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://twitter.com/kou_space"> <i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="https://www.youtube.com/@mbkkouspacerokettakm9166"> <i
+                                    class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright-text">
+            <p> Copyright @2022 KouSpace Roket Takımı | Tüm Hakları Saklıdır. | Designed by Dolunay Pazarci</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="Assets/js/main.js"></script>
+    <script src="Assets/Bootstrap/bootstrap.min.js"></script>
+</body>
+
+</html>

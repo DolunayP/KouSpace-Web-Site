@@ -65,3 +65,10 @@ const showAnimate = () => {
 }
 window.addEventListener('load', showAnimate);
 window.addEventListener('scroll', showAnimate);
+
+
+const selectSubmit = document.querySelector(".submit-button button")
+selectSubmit.addEventListener("click", function (e) {
+    e.preventDefault()
+})
+
