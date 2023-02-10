@@ -37,7 +37,7 @@ li {
 }
 
 .navbar-scrolled {
-    background-color: rgba(10, 10, 10, 0.85);
+    background: rgba(10, 10, 10, 0.85);
 }
 
 nav {
@@ -179,7 +179,9 @@ nav a i {
     font-family: "Open Sans", sans-serif;
     color: rgba(0, 0, 0, 0.9);
     font-style: italic;
-    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.9));
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 90%);
+    position: relative;
+    z-index: 0;
 }
 
 .about-us-text {
@@ -251,8 +253,12 @@ nav a i {
 
 /** ------> sponsors end **/
 
-
 /** ------> support-us start **/
+#support-us-main {
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 90%);
+    position: relative;
+    z-index: 0;
+}
 
 #supportPhoto {
     background: linear-gradient(105deg, rgba(9, 9, 9, 0.8) 0%, rgba(92, 161, 196, 0.6) 15%, rgba(0, 0, 0, 0.78) 100%), url('../img/contact-us.jpg') bottom center;
@@ -264,8 +270,6 @@ nav a i {
     overflow: hidden;
     z-index: 0;
     background-attachment: fixed;
-    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.9));
-
 }
 
 #support-text {
@@ -304,8 +308,7 @@ nav a i {
     font-family: "Open Sans", sans-serif;
     color: rgb(0, 0, 0);
     padding: 1rem 0rem;
-    background-color: white;
-    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.8));
+    background-color: rgba(255, 255, 255, 0.95)
 }
 
 .contact-form-main input,
@@ -336,13 +339,22 @@ nav a i {
 
 footer a {
     color: white;
+    transition: all 500ms;
+
+}
+
+footer a:hover {
+    opacity: 1;
+    color: rgb(240, 162, 89);
 }
 
 .footer {
     padding-block: 0.5rem;
     position: relative;
     background: rgba(0, 0, 0, 1);
-
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 90%);
+    position: relative;
+    z-index: 0;
 }
 
 .footer-menu,
@@ -375,15 +387,6 @@ footer a {
 
 .footer-menu li {
     margin: 0.5rem 0rem;
-}
-
-.footer-menu a {
-    transition: all 500ms;
-}
-
-.footer-menu a:hover {
-    opacity: 1;
-    color: rgb(240, 162, 89);
 }
 
 .footer-menu li a i {
@@ -519,7 +522,6 @@ footer a {
 
 .box {
     position: relative;
-    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.6));
     width: 100%;
     height: 100%;
     min-height: 30rem;
@@ -858,9 +860,10 @@ footer a {
     position: relative;
     width: 100%;
     height: 100%;
-    z-index: 0;
+    z-index: 1;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.8);
 }
 
 .sponsorship-bg {
@@ -881,7 +884,7 @@ footer a {
     margin-bottom: 14px;
     margin-top: 16px;
     letter-spacing: 2px;
-    filter: contrast(1.5) brightness(1.5) drop-shadow(0 0 2px rgba(0, 0, 0, 0.9));
+    filter: contrast(1.5) brightness(1.5) drop-shadow(0 0 2px black);
     color: aliceblue;
 }
 
@@ -921,6 +924,7 @@ footer a {
 /** -------> Sponsors start **/
 #sponsors {
     position: relative;
+    z-index: 0;
     background-color: white;
     padding: 2rem;
     overflow-x: hidden;
@@ -937,7 +941,7 @@ footer a {
     font-style: italic;
     margin-bottom: 24px;
     letter-spacing: 10px;
-    filter: brightness(1.5) drop-shadow(0 0 10px rgba(7, 7, 7, 0.9));
+    filter: brightness(1.5);
     color: rgb(19, 27, 58);
 }
 
@@ -1116,7 +1120,7 @@ footer a {
 }
 
 .google-maps iframe {
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
+    box-shadow: 0 0 12px 1.5px rgba(0, 0, 0, 0.8);
     max-width: 1000px;
     width: 70%;
     min-height: 50vh;
