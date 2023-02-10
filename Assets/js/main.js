@@ -1,3 +1,8 @@
+const preloader = document.querySelector('#preloader')
+window.addEventListener('load', function () {
+    preloader.style.display="none"
+})
+
 
 var swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
