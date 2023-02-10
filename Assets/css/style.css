@@ -1,6 +1,10 @@
 @import url("https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css");
 
 /** Fonts start **/
+@font-face {
+    font-family: spaceage;
+    src: url(../ttf/space\ age.ttf);
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Bebas+Neue&family=Fredoka+One&family=Londrina+Outline&family=Permanent+Marker&family=Rubik+Vinyl&family=Unbounded:wght@300;400;500;600;700;800&family=Zen+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
@@ -70,6 +74,7 @@ nav a i {
 }
 
 #navTextKouspace {
+    font-family: spaceage;
     transition: 1s all;
 }
 
@@ -119,6 +124,7 @@ nav a i {
 }
 
 #main-text h1 {
+    font-family: spaceage;
     letter-spacing: 0.2em;
     font-weight: 800;
     font-size: 5.6rem;
