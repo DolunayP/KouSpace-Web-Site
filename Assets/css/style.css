@@ -1,5 +1,13 @@
 @import url("https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css");
 
+/** Fonts start **/
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Bebas+Neue&family=Fredoka+One&family=Londrina+Outline&family=Permanent+Marker&family=Rubik+Vinyl&family=Unbounded:wght@300;400;500;600;700;800&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@600&display=swap');
+
+/** Fonts end **/
+
 body {
     background-color: black;
 }
@@ -757,18 +765,18 @@ footer a:hover {
 }
 
 .team-header {
-
     font-family: 'Permanent Marker', cursive;
     margin-bottom: 0.25rem;
     text-align: center;
-    color: white;
+    color: rgb(239, 239, 239);
     width: 100%;
     margin-block: 2rem;
 }
 
 .team-header h1 {
     font-weight: 700;
-    font-size: 9vw;
+    font-size: 6vw;
+    letter-spacing: 8px;
 }
 
 #team span {
@@ -842,6 +850,29 @@ footer a:hover {
     .person-card-box {
         max-width: 21rem;
     }
+}
+
+@media screen and (max-width: 992px) {
+    .team-header h1 {
+        font-size: 7.5vw;
+    }
+
+}
+
+@media screen and (max-width:556px) {
+    .team-header h1 {
+        font-size: 2.6rem;
+        letter-spacing: 2px;
+    }
+
+}
+
+@media screen and (max-width:440px) {
+    .team-header h1 {
+        font-size: 2.4rem;
+        letter-spacing: 1.5px;
+    }
+
 }
 
 /* ! Team Page End
@@ -941,6 +972,7 @@ footer a:hover {
     font-style: italic;
     margin-bottom: 24px;
     letter-spacing: 10px;
+    font-size: 3.6rem;
     filter: brightness(1.5);
     color: rgb(19, 27, 58);
 }
@@ -951,6 +983,27 @@ footer a:hover {
     min-width: 48px;
     min-height: 36px;
     margin: 4px;
+}
+
+@media screen and (max-width:768px) {
+    #sponsors .container h1 {
+        font-size: 3rem;
+        letter-spacing: 4.5px;
+    }
+}
+
+@media screen and (max-width:556px) {
+    #sponsors .container h1 {
+        font-size: 2.5rem;
+        letter-spacing: 3.25px;
+    }
+}
+
+@media screen and (max-width:556px) {
+    #sponsors .container h1 {
+        font-size: 2.3rem;
+        letter-spacing: 1px;
+    }
 }
 
 /** -------> Sponsors end **/
