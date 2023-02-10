@@ -51,24 +51,27 @@ if (selectNavbar) {
     onscroll(document, navbarScrolled)
 }
 
-
-
-let selectAnimation = document.querySelectorAll('.hidden-right, .hidden-left, .hidden-top, .hidden-bottom, .hidden-z');
+const selectAnimation = document.querySelectorAll('.hidden-right, .hidden-left, .hidden-top, .hidden-bottom, .hidden-z');
 const showAnimate = () => {
     const triggerBottom = window.innerHeight / 1.5 * 1.4
     selectAnimation.forEach((items) => {
         const itemsTop = items.getBoundingClientRect().top;
         if (itemsTop < triggerBottom) {
-            items.classList.add('show');
-        } else { items.classList.remove('show') }
+            items.classList.add('show-hidden');
+        } else { items.classList.remove('show-hidden') }
     })
 }
 window.addEventListener('load', showAnimate);
 window.addEventListener('scroll', showAnimate);
 
 
-const selectSubmit = document.querySelector(".submit-button button")
-selectSubmit.addEventListener("click", function (e) {
-    e.preventDefault()
-})
+function togglerBackground() {
+    selectNavbar.classList.add('navbar-scrolled')
+}
+
+
+// const selectSubmit = document.querySelector(".submit-button button")
+// selectSubmit.addEventListener("click", function (e) {
+//     e.preventDefault()
+// })
 
