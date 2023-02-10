@@ -23,7 +23,7 @@ li {
 /** ------> Preloader start **/
 
 #preloader {
-    background: white url(../img/rocketanimation.gif) no-repeat center center;
+    background: white url(../img/preloader.gif) no-repeat center center;
     background-size: cover;
     height: 100vh;
     width: 100%;
