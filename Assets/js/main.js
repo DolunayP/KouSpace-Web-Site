@@ -25,19 +25,6 @@ const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
 };
 
-
-// const scrollto = (el) => {
-//     let navbar = select('.navbar')
-//     let offset = navbar.offsetHeight
-
-//     let elementPos = select(el).offsetTop
-//     window.scrollTo({
-//         top: elementPos - offset,
-//         behavior: 'smooth'
-//     })
-// }
-
-
 let selectNavbar = document.querySelector('.navbar');
 if (selectNavbar) {
     const navbarScrolled = () => {
@@ -69,9 +56,4 @@ function togglerBackground() {
     selectNavbar.classList.add('navbar-scrolled')
 }
 
-
-// const selectSubmit = document.querySelector(".submit-button button")
-// selectSubmit.addEventListener("click", function (e) {
-//     e.preventDefault()
-// })
 
