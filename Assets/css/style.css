@@ -6,6 +6,10 @@
     src: url(../ttf/space\ age.ttf);
 }
 
+@font-face {
+    font-family: permanentMarker;
+    src: url(../ttf/PermanentMarker-Regular.ttf);
+}
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Bebas+Neue&family=Fredoka+One&family=Londrina+Outline&family=Permanent+Marker&family=Rubik+Vinyl&family=Unbounded:wght@300;400;500;600;700;800&family=Zen+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@600&display=swap');
@@ -771,7 +775,7 @@ footer a:hover {
 }
 
 .team-header {
-    font-family: 'Permanent Marker', cursive;
+    font-family: permanentMarker;
     margin-bottom: 0.25rem;
     text-align: center;
     color: rgb(239, 239, 239);
