@@ -713,8 +713,6 @@ footer a:hover {
         height: 38%;
     }
 }
-
-
 /* ! Rockets Page End  */
 
 /* ! Team Page Start */
@@ -766,7 +764,6 @@ footer a:hover {
 .team-bg-right {
     right: -160px;
 }
-
 
 #team .row {
     display: flex;
