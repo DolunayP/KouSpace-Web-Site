@@ -10,6 +10,17 @@
     font-family: permanentMarker;
     src: url(../ttf/PermanentMarker-Regular.ttf);
 }
+
+@font-face {
+    font-family: vonem;
+    src: url(../ttf/Vonem.ttf);
+}
+
+@font-face {
+    font-family: agency;
+    src: url(../ttf/Agency.ttf);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Bebas+Neue&family=Fredoka+One&family=Londrina+Outline&family=Permanent+Marker&family=Rubik+Vinyl&family=Unbounded:wght@300;400;500;600;700;800&family=Zen+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@600&display=swap');
@@ -301,7 +312,6 @@ nav a i {
 #support-text h1 {
     margin: 1rem 0rem;
     padding: 1rem 0rem;
-
 }
 
 #support-text a {
@@ -343,7 +353,9 @@ nav a i {
 }
 
 .contact-header-main h2 {
-    font-weight: 800 !important;
+    font-family: vonem;
+    font-size: 3rem;
+    letter-spacing: 5px;
 }
 
 .contact-form-main {
@@ -626,7 +638,8 @@ footer a:hover {
 .rocket-text h1 {
     font-weight: 800;
     padding-bottom: 2rem;
-    margin: 1rem;
+    margin: 1rem auto;
+    font-family: permanentmarker;
 }
 
 .rocket-text p {
@@ -664,7 +677,6 @@ footer a:hover {
     #img-yadigar {
         top: 40%;
         transform: scale(1.35) rotate(128deg);
-
     }
 
     .rocket-text p {
@@ -713,6 +725,7 @@ footer a:hover {
         height: 38%;
     }
 }
+
 /* ! Rockets Page End  */
 
 /* ! Team Page Start */
@@ -884,8 +897,6 @@ footer a:hover {
 
 /* ! Team Page End
 
-
-
 /* ! SPONSORS PAGE START */
 
 /** -------> Sponsorship info start **/
@@ -924,6 +935,11 @@ footer a:hover {
     letter-spacing: 2px;
     filter: contrast(1.5) brightness(1.5) drop-shadow(0 0 2px black);
     color: aliceblue;
+    font-family: agency;
+}
+
+.packet-text {
+    font-size: 2.75rem;
 }
 
 .sponsorship-small-icon {
@@ -942,7 +958,6 @@ footer a:hover {
     display: flex !important;
     flex-direction: column;
     text-align: right;
-    justify-content: center;
     background: rgba(192, 192, 192, 0.55);
     color: white;
     height: 100%;
@@ -1032,13 +1047,20 @@ footer a:hover {
 }
 
 #contact-form {
-    padding-top: 75px;
+    padding-top: 100px;
     color: white;
     position: relative;
 }
 
 .contact-header {
     text-align: center;
+    font-style: italic;
+}
+
+.contact-header h1 {
+    font-family: vonem;
+    font-size: 3rem;
+    letter-spacing: 5px;
 }
 
 .contact-header p {

@@ -29,7 +29,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <ul class="navbar-nav d-flex align-items-center justify-content-center">
                     <li>
-                        <a class="nav-link active mx-1" aria-current="page" href="Index.html"> <i
+                        <a class="nav-link mx-1" aria-current="page" href="Index.html"> <i
                                 class="fa-solid fa-igloo"></i> Anasayfa </a>
                     </li>
                     <li>
@@ -57,28 +57,28 @@
     <section id="contact-form">
         <div class="container hidden-z">
             <div class="contact-header">
-                <h1> İLETİŞİM </h1>
+                <h1> ILETISIM </h1>
                 <p> Bizimle iletişime geçmek için lütfen aşağıdaki formu doldurunuz,
                     teşekkürler...</p>
             </div>
-            <div class="col-xl-8 col-lg-9 col-md-10 col contact-form">
-                <form class="fw-bold fs-5">
+            <div class="col-xl-8 col-lg-9 col-md-10 col contact-form" >
+                <form class="fw-bold fs-5" action="https://formsubmit.co/cukkamix5@hotmail.com" method="POST">
                     <div class="isim-box">
                         <div>
-                            <input type="text" placeholder="Adınız" class="form-control">
+                            <input name="name" type="text" placeholder="Adınız" class="form-control">
                         </div>
                         <div>
-                            <input type="text" placeholder="Soyadınız" class="form-control">
+                            <input name="surname" type="text" placeholder="Soyadınız" class="form-control">
                         </div>
                     </div>
                     <div>
-                        <input type="email" placeholder="ornek@gmail.com" class="form-control">
+                        <input type="email" name="email" placeholder="ornek@gmail.com" class="form-control">
                     </div>
                     <div>
-                        <input type="text" placeholder="Kısaca konu başlığını belirtiniz" class="form-control">
+                        <input type="text" name="topic" placeholder="Kısaca konu başlığını belirtiniz" class="form-control">
                     </div>
                     <div>
-                        <textarea type="text" class="form-control" rows="7"
+                        <textarea name="message" type="text" class="form-control" rows="7"
                             placeholder="Mesajınızı yazınız..."></textarea>
                     </div>
                     <div class="submit-button">
