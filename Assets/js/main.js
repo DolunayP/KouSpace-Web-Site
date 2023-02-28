@@ -1,6 +1,8 @@
 const preloader = document.querySelector('#preloader')
 window.addEventListener('load', function () {
-    preloader.style.display = "none"
+    if (preloader != null) {
+        preloader.style.display = "none"
+    }
 })
 
 const activeHref = document.location.href;
@@ -9,6 +11,8 @@ const href = document.querySelectorAll('.navbar-nav a');
 href.forEach(item => {
     if (item.href == activeHref) {
         item.classList.add('active');
+        console.log(item.href);
+        console.log(activeHref)
     }
 });
 
