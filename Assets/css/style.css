@@ -41,7 +41,7 @@ li {
 /** ------> Preloader start **/
 
 #preloader {
-    background: white url(../img/preloader.gif) no-repeat center center;
+    background: white url(../img/preloader.mp4) no-repeat center center;
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -634,7 +634,8 @@ footer a:hover {
     text-align: center;
 }
 
-.rocket-text h1 {
+.rocket-text h1,
+.rocket-text h2 {
     font-weight: 800;
     padding-bottom: 2rem;
     margin: 1rem auto;
@@ -798,6 +799,12 @@ footer a:hover {
     letter-spacing: 8px;
 }
 
+.team-header h2 {
+    font-weight: 700;
+    font-size: 6vw;
+    letter-spacing: 8px;
+}
+
 #team span {
     font-weight: 600;
     padding-top: 1em;
@@ -814,6 +821,7 @@ footer a:hover {
 }
 
 .person-card {
+    background-color: black;
     border-radius: 0.5em;
     position: relative;
     width: 100%;
@@ -925,7 +933,8 @@ footer a:hover {
     background-size: cover;
 }
 
-#sponsorship-info .container h1 {
+#sponsorship-info .container h1,
+#sponsorship-info .container h2 {
     text-align: center;
     font-weight: 700;
     font-style: italic;
@@ -987,7 +996,7 @@ footer a:hover {
     margin-bottom: 8px;
 }
 
-#sponsors .container h1 {
+#sponsors .container h2 {
     text-align: center;
     font-weight: 700;
     font-style: italic;
@@ -1113,7 +1122,7 @@ footer a:hover {
     overflow: hidden;
 }
 
-#social-media-buttons h1 {
+#social-media-buttons h2 {
     color: white;
     font-weight: 700;
     font-size: 1.75em;
