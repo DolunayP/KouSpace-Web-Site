@@ -15,8 +15,8 @@
 }
 
 @font-face {
-    font-family: vonem;
-    src: url(../ttf/Vonem.ttf);
+    font-family: chunk;
+    src: url(../ttf/Chunk\ Five\ Print.otf);
 }
 
 @font-face {
@@ -352,7 +352,7 @@ nav a i {
 }
 
 .contact-header-main h2 {
-    font-family: vonem;
+    font-family: chunk;
     font-size: 3rem;
     letter-spacing: 5px;
 }
@@ -1066,7 +1066,7 @@ footer a:hover {
 }
 
 .contact-header h1 {
-    font-family: vonem;
+    font-family: chunk;
     font-size: 3rem;
     letter-spacing: 5px;
 }
@@ -1199,23 +1199,23 @@ footer a:hover {
 #location {
     padding-top: 2%;
     padding-bottom: 5%;
-}
-
-.google-maps {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    justify-content: center;
 }
 
-.google-maps iframe {
-    box-shadow: 0 0 12px 1.5px rgba(0, 0, 0, 0.8);
-    max-width: 1000px;
-    width: 70%;
-    min-height: 50vh;
-    background-position: center;
-    border-radius: 0.5em;
+#map {
+    height: 560px;
+    width: 80%;
+    position: relative;
+    border-radius: 8px;
+}
+
+@media screen and (max-width:560px) {
+    #map {
+        height: 400px;
+        width: 90%;
+    }
 }
 
 /** -------> Google Maps end **/

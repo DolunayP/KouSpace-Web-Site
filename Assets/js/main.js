@@ -1,3 +1,7 @@
+const activeHref = document.location.href;
+const href = document.querySelectorAll('.navbar-nav a');
+
+//preloader
 const preloader = document.querySelector('#preloader')
 window.addEventListener('load', function () {
     if (preloader != null) {
@@ -5,17 +9,15 @@ window.addEventListener('load', function () {
     }
 })
 
-const activeHref = document.location.href;
-const href = document.querySelectorAll('.navbar-nav a');
-
+//navbar active option effect
 href.forEach(item => {
     if (item.href == activeHref) {
         item.classList.add('active');
-        console.log(item.href);
-        console.log(activeHref)
     }
 });
 
+
+//sponsors slider
 var swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
     grabCursor: true,
@@ -38,6 +40,8 @@ var swiper = new Swiper(".mySwiper", {
     loop: true,
 });
 
+
+//navbar scroll effect
 const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
 };
@@ -55,6 +59,11 @@ if (selectNavbar) {
     onscroll(document, navbarScrolled)
 }
 
+function togglerBackground() {
+    selectNavbar.classList.add('navbar-scrolled')
+}
+
+//Page animations
 const selectAnimation = document.querySelectorAll('.hidden-right, .hidden-left, .hidden-top, .hidden-bottom, .hidden-z');
 const showAnimate = () => {
     const triggerBottom = window.innerHeight / 1.5 * 1.4
@@ -69,8 +78,28 @@ window.addEventListener('load', showAnimate);
 window.addEventListener('scroll', showAnimate);
 
 
-function togglerBackground() {
-    selectNavbar.classList.add('navbar-scrolled')
-}
 
+//Contact page Google Maps api
+var map;
+function initMap() {
+
+    //map options
+    var options = {
+        center: { lat: 40.743315, lng: 29.941307 },
+        zoom: 14
+    }
+
+    // create map
+    map = new google.maps.Map(document.getElementById('map'), options)
+
+
+    //create marker
+    var marker = new google.maps.Marker({
+        position: { lat: 40.743315, lng: 29.941307 },
+        map,
+        title: "KouSpace Roket Takımı Çalışma Atölyesi",
+    });
+
+
+}
 
