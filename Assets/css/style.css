@@ -100,7 +100,7 @@ nav a i {
 
 /** ------> NavBar end **/
 
-/** ------> hero start **/
+/** ------> Hero start **/
 #main-photo {
     background: url(../img/contact-us.jpg) center;
     background-size: cover;
@@ -196,6 +196,10 @@ nav a i {
 
 }
 
+#homepage-sponsor-header {
+    font-family: chunk;
+}
+
 /** ------> hero end **/
 
 /** ------> sponsors start**/
@@ -217,6 +221,10 @@ nav a i {
     text-align: center;
     font-size: medium;
     font-weight: 500;
+}
+
+.about-us-text h2 {
+    font-family: chunk;
 }
 
 .col-lg-7:has(.about-us-text) {
