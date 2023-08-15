@@ -198,6 +198,7 @@ nav a i {
 
 #homepage-sponsor-header {
     font-family: chunk;
+    font-size: 48px;
 }
 
 /** ------> hero end **/
@@ -225,6 +226,7 @@ nav a i {
 
 .about-us-text h2 {
     font-family: chunk;
+    font-size: 40px;
 }
 
 .col-lg-7:has(.about-us-text) {
@@ -266,25 +268,58 @@ nav a i {
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 185px;
-    height: 160px;
+    width: 18%;
+    height: 18%;
     background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 20px;
+    margin: 0px 10px;
     padding: 0px 5px;
+    margin-block: auto;
 }
 
 .swiper-slide img {
     display: block;
-    width: 80%;
-    height: 65%;
+    width: 75%;
+    height: 75%;
 }
 
 .swiper-3d .swiper-slide-shadow-left,
 .swiper-3d .swiper-slide-shadow-right {
     background-image: none;
+}
+
+@media screen and (max-width:768px) {
+    #homepage-sponsor-header {
+        font-size: 56px;
+    }
+
+    .swiper-slide {
+        width: 37%;
+        height: 37%;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 85%;
+        height: 85%;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+}
+
+@media screen and (max-width:556px) {
+    #homepage-sponsor-header {
+        font-size: 34px;
+    }
+
+    .swiper-slide {
+        width: 40%;
+        height: 40%;
+    }
 }
 
 /** ------> sponsors end **/
@@ -999,48 +1034,74 @@ footer a:hover {
     overflow-x: hidden;
 }
 
-#sponsors .container .row div {
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
 #sponsors .container h2 {
     text-align: center;
     font-weight: 700;
     font-style: italic;
-    margin-bottom: 24px;
-    letter-spacing: 10px;
-    font-size: 3.6rem;
-    filter: brightness(1.5);
-    color: rgb(19, 27, 58);
+    letter-spacing: 2px;
+    filter: contrast(0.7) drop-shadow(0 0 1.5px black);
+    color: rgb(2, 49, 91);
+    font-family: agency;
+    font-size: 3.8rem;
 }
 
-#sponsors img {
-    width: 80%;
-    height: 70%;
-    min-width: 48px;
-    min-height: 36px;
-    margin: 4px;
+.sponsors-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
 }
 
-@media screen and (max-width:768px) {
-    #sponsors .container h1 {
-        font-size: 3rem;
-        letter-spacing: 4.5px;
+.sponsor-card {
+    width: 24%;
+    height: 24%;
+    padding: 16px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 144px;
+}
+
+.sponsor-card img {
+    width: 75%;
+    height: 75%;
+}
+
+@media screen and (max-width:992px) {
+    .sponsors-box {
+        gap: 2px;
+    }
+
+    .sponsor-card {
+        width: 32%;
+        height: 32%;
+        padding: 12px 12px;
+    }
+
+    .sponsor-card img {
+        width: 85%;
+        height: 85%;
     }
 }
 
 @media screen and (max-width:556px) {
-    #sponsors .container h1 {
-        font-size: 2.5rem;
-        letter-spacing: 3.25px;
+    .sponsors-box {
+        gap: 2px;
     }
-}
 
-@media screen and (max-width:556px) {
-    #sponsors .container h1 {
-        font-size: 2.3rem;
-        letter-spacing: 1px;
+    .sponsor-card {
+        width: 48%;
+        height: 48%;
+        padding: 8px 8px;
+    }
+
+    .sponsor-card img {
+        width: 92%;
+        height: 92%;
+    }
+    #sponsors .container h2 {
+        font-size: 2.6rem;
     }
 }
 
