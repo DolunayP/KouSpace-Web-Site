@@ -1045,8 +1045,8 @@ footer a:hover {
     font-size: 3.8rem;
 }
 
-.sponsors-box {
-    display: flex;
+.sponsors-cards {
+    display: flex !important;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -1069,7 +1069,7 @@ footer a:hover {
 }
 
 @media screen and (max-width:992px) {
-    .sponsors-box {
+    .sponsors-cards {
         gap: 2px;
     }
 
@@ -1086,7 +1086,7 @@ footer a:hover {
 }
 
 @media screen and (max-width:556px) {
-    .sponsors-box {
+    .sponsors-cards {
         gap: 2px;
     }
 
