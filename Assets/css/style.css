@@ -1100,6 +1100,7 @@ footer a:hover {
         width: 92%;
         height: 92%;
     }
+
     #sponsors .container h2 {
         font-size: 2.6rem;
     }
@@ -1290,3 +1291,61 @@ footer a:hover {
 /** -------> Google Maps end **/
 
 /* ! Contact Page end  */
+
+
+#apply-sect {
+    background: url(../img/contact-us.jpg) center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.apply-form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    margin-top: 40px;
+}
+
+.apply-form iframe {
+    width: 100%;
+}
+
+.apply-banner {
+    width: 100%;
+}
+
+.apply-banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.apply {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.black-50 {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+@media screen and (max-width:992px) {
+    .apply-form iframe {
+        height: 7000px;
+    }
+}
