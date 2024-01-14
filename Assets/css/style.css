@@ -114,6 +114,8 @@ nav a i {
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-background-attachment: fixed;
+    -webkit-background-size: cover;
 }
 
 .black-50 {
@@ -165,6 +167,7 @@ nav a i {
     #main-text p :nth-child(4) {
         margin-left: 5rem !important;
     }
+
 }
 
 @media screen and (max-width:556px) {
@@ -174,6 +177,11 @@ nav a i {
 
     #main-text h1 {
         font-size: 7.5vw;
+    }
+
+    #main-photo {
+        background-size: 100% 100%;
+        background-attachment: scroll;
     }
 }
 
@@ -341,6 +349,8 @@ nav a i {
     overflow: hidden;
     z-index: 0;
     background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -webkit-background-size: cover;
 }
 
 #support-text {
@@ -369,6 +379,13 @@ nav a i {
     background-color: transparent;
     border: 1px solid white;
     color: white;
+}
+
+@media screen and (max-width:556px) {
+    #supportPhoto {
+        background-size: 100% 100%;
+        background-attachment: scroll;
+    }
 }
 
 /** ------> support-us end**/
@@ -963,12 +980,16 @@ footer a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.8);
+    -webkit-background-attachment: fixed;
+    -webkit-background-size: cover;
 }
 
 .sponsorship-bg {
     background: url(../img/Sponsors/sponsorship-bg.png) no-repeat center;
     display: flex;
     background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -webkit-background-size: cover;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -1122,6 +1143,8 @@ footer a:hover {
     position: fixed;
     z-index: -1;
     overflow: hidden;
+    -webkit-background-attachment: fixed;
+    -webkit-background-size: cover;
 }
 
 #contact-form {
@@ -1301,6 +1324,8 @@ footer a:hover {
     z-index: 0;
     overflow: hidden;
     background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -webkit-background-size: cover;
 }
 
 .apply-form {
@@ -1315,6 +1340,7 @@ footer a:hover {
 
 .apply-form iframe {
     width: 100%;
+
 }
 
 .apply-banner {
@@ -1346,6 +1372,13 @@ footer a:hover {
 
 @media screen and (max-width:992px) {
     .apply-form iframe {
-        height: 7000px;
+        height: 8940px;
+    }
+}
+
+@media screen and (max-width:556) {
+    #apply-sect {
+        background-size: 100% 100%;
+        background-attachment: scroll;
     }
 }
