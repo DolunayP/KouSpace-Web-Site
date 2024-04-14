@@ -1,276 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Teknofest Roket Yarışması için ürettiğimiz roketleri ve sistemleri inceleyebilirsiniz.">
-    <meta name="robots" content="all">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Teknofest Roket Yarışması için ürettiğimiz roketleri ve sistemleri inceleyebilirsiniz."
+    />
+    <meta name="robots" content="all" />
     <title>Roketler</title>
-    <link rel="icon" href="Assets/img/tab-icon.png">
-    <link rel="stylesheet" href="Assets/Bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="icon" href="Assets/img/tab-icon.png" />
+    <link rel="stylesheet" href="Assets/Bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="Assets/css/style.css" />
     <script type="module">
-        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
     </script>
-    <script src="https://kit.fontawesome.com/5a4d51e004.js" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://kit.fontawesome.com/5a4d51e004.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-nav fixed-top" id="navbar">
-        <div class="container">
-            <a class="navbar-brand fs-3 fw-bold" href="https://kouspace.com" id="navTextKouspace"> <img
-                    src="Assets/img/kouspace_logo.png" alt="KouSpace roket takımı logosu" id="navLogoKouspace">
-                KouSpace</a>
-            <button class="navbar-toggler" onClick="togglerBackground()" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                aria-expanded="false navigation">
-                <span class="navbar-toggler-icon">
-                </span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <ul class="navbar-nav d-flex align-items-center justify-content-center">
-                    <li>
-                        <a class="nav-link mx-1" aria-current="page" href="https://kouspace.com"> <i
-                                class="fa-solid fa-igloo"></i> Anasayfa </a>
-                    </li>
-                    <li>
-                        <a class="nav-link mx-1" href="roketler.html"> <i class="fa-solid fa-rocket"></i> Roketler
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link mx-1" href="sponsor.html"> <i class="fa-solid fa-handshake"></i>
-                            Sponsorlar
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link mx-1" href="takim.html"> <i class="fa-solid fa-people-group"></i> Takım
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link mx-1" href="iletisim.html"> <i class="fa-solid fa-phone-volume"></i> İletişim
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link mx-1" href="/basvuru"> <i class="fa-solid fa-file"></i> Başvuru
-                        </a>
-                    </li>
-                </ul>
-            </div>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-nav fixed-top"
+      id="navbar"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand fs-3 fw-bold"
+          href="https://kouspace.com.tr"
+          id="navTextKouspace"
+        >
+          <img
+            src="Assets/img/kouspace_logo.png"
+            alt="KouSpace roket takımı logosu"
+            id="navLogoKouspace"
+          />
+          KouSpace</a
+        >
+        <button
+          class="navbar-toggler"
+          onClick="togglerBackground()"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false navigation"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <ul
+            class="navbar-nav d-flex align-items-center justify-content-center"
+          >
+            <li>
+              <a
+                class="nav-link mx-1"
+                aria-current="page"
+                href="https://kouspace.com.tr"
+              >
+                <i class="fa-solid fa-igloo"></i> Anasayfa
+              </a>
+            </li>
+            <li>
+              <a class="nav-link mx-1" href="roketler.html">
+                <i class="fa-solid fa-rocket"></i> Roketler
+              </a>
+            </li>
+            <li>
+              <a class="nav-link mx-1" href="sponsor.html">
+                <i class="fa-solid fa-handshake"></i>
+                Sponsorlar
+              </a>
+            </li>
+            <li>
+              <a class="nav-link mx-1" href="takim.html">
+                <i class="fa-solid fa-people-group"></i> Takım
+              </a>
+            </li>
+            <li>
+              <a class="nav-link mx-1" href="iletisim.html">
+                <i class="fa-solid fa-phone-volume"></i> İletişim
+              </a>
+            </li>
+            <li>
+              <a class="nav-link mx-1" href="/basvuru">
+                <i class="fa-solid fa-file"></i> Başvuru
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <section id="rockets">
-        <div class="rockets-bg-ltr">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-5 col-md-8 col-sm-10 col-12 hidden-z">
-                        <div class="box">
-                            <div class="front-face"><img class="img-fluid" id="img-safak" src="Assets/img/safak.png"
-                                    alt="Kouspace Roket Takımı teknofest roket yarışması orta irtifa kategorisi Şafak isimli roketi">
-                            </div>
-                            <div class="back-face"><video muted autoplay loop>
-                                    <source src="Assets/img/safak.mp4" type="video/mp4">
-                                </video></div>
-                        </div>
-                    </div>
-                    <div class="col-xl-8 col-lg-7 col-md-11 col-sm-12 rocket-text hidden-z">
-                        <h1 class="display-3">S A F A K</h1>
-                        <p>M1675 Motor. Yaklaşık 18 kg ağırlık. 213 cm boy olarak
-                            tasarlandı, atış
-                            günü 215 cm'e getirildi. Full karbonfiber gövde ve burun. 8 adet fiberglass kanatçık
-                            (alt-üst). Kapsüllü ve özel görevli rover faydalı yük. 8 cm yaylı tek kurtarma. Çift
-                            paraşüt. Elle basılmış pcb çift aviyonik kart. Xbee haberleşme modülü. Arduino nano
-                            işlemci.
-                            Ultimate 66 chanel gps. 3s lipo pil. Mor renk yer istasyonu. Kanla boyanmış
-                            paraşütler.
-                            Hızlı yapıştırıcı ile yapıştırılmış kanatlar ve ray butonları. İçi matkapla delinmiş
-                            engine
-                            block. 80cm çapta iç tüp. Burun sholder 9cm. 3 mm esnek ve gövdeye 10 vida ile
-                            tutturulmuş
-                            coupler. Kusursuz uçuş performansı. KouSpace'in ilk göz ağırısı. Tuz gölü
-                            topraklarında
-                            izine bile rastlanamayan, tarihte daha iyisi görülmemiş bir sonda roketi. #ŞAFAK
-                        </p>
-                    </div>
+      <div class="rockets-bg-ltr">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-5 col-md-8 col-sm-10 col-12 hidden-z">
+              <div class="box">
+                <div class="front-face">
+                  <img
+                    class="img-fluid"
+                    id="img-safak"
+                    src="Assets/img/safak.png"
+                    alt="Kouspace Roket Takımı teknofest roket yarışması orta irtifa kategorisi Şafak isimli roketi"
+                  />
                 </div>
+                <div class="back-face">
+                  <video muted autoplay loop>
+                    <source src="Assets/img/safak.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
             </div>
+            <div
+              class="col-xl-8 col-lg-7 col-md-11 col-sm-12 rocket-text hidden-z"
+            >
+              <h1 class="display-3">S A F A K</h1>
+              <p>
+                M1675 Motor. Yaklaşık 18 kg ağırlık. 213 cm boy olarak
+                tasarlandı, atış günü 215 cm'e getirildi. Full karbonfiber gövde
+                ve burun. 8 adet fiberglass kanatçık (alt-üst). Kapsüllü ve özel
+                görevli rover faydalı yük. 8 cm yaylı tek kurtarma. Çift
+                paraşüt. Elle basılmış pcb çift aviyonik kart. Xbee haberleşme
+                modülü. Arduino nano işlemci. Ultimate 66 chanel gps. 3s lipo
+                pil. Mor renk yer istasyonu. Kanla boyanmış paraşütler. Hızlı
+                yapıştırıcı ile yapıştırılmış kanatlar ve ray butonları. İçi
+                matkapla delinmiş engine block. 80cm çapta iç tüp. Burun sholder
+                9cm. 3 mm esnek ve gövdeye 10 vida ile tutturulmuş coupler.
+                Kusursuz uçuş performansı. KouSpace'in ilk göz ağırısı. Tuz gölü
+                topraklarında izine bile rastlanamayan, tarihte daha iyisi
+                görülmemiş bir sonda roketi. #ŞAFAK
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="rockets-bg-rtl">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-5 col-md-8 col-sm-10 col-12 hidden-z">
-                        <div class="box">
-                            <div class="front-face"><img class="img-fluid" id="img-airbender"
-                                    src="Assets/img/airbender.png"
-                                    alt="Kouspace Roket Takımı teknofest roket yarışması orta irtifa kategorisi Airbender isimli roket">
-                            </div>
-                            <div class="back-face"><video muted autoplay loop>
-                                    <source src="Assets/img/airbender.mp4" type="video/mp4">
-                                </video></div>
-                        </div>
-                    </div>
-                    <div class="col-xl-8 col-lg-7 col-md-11 col-sm-12 rocket-text hidden-z">
-                        <h2 class="display-3">A I R B E N D E R</h2>
-                        <p>M1545 motora sahip şu ana kadar görev yapmış tek
-                            roket. 130mm dış çap, 305cm
-                            uzunluk. Burundan çift kademeli 70 cm yaylı kurtarma. Üçgen aviyonik blok, mıknatısla
-                            aktifleştime. 3
-                            karbonfiber kanatçık. Karbonfiber burun konisi, sholder raylı. Fiberglass üst gövde.
-                            Karbonfiber
-                            pürüzsüz alt gövde.
-                            Yaklaşık 27 kg ağırlık. Jst ile kauçuklu yuvalara oturtulmuş aviyonik sistem. Sınıfının en
-                            iyi roketi.
-                            Hava bükücü. Airbender. 🚀 120 cm alt gövde. 150 cm üst gövde. 35 cm burun. Step motorlarla
-                            aktifleştirilen kurtarma sistemi. Rengarenk paraşütler. Fıstık yeşili aviyonik blok. Baş
-                            belası
-                            fiberglass payload. Firebenderın büyük abisi. Kartal gözlü, sert bakışlı. Rampada payload
-                            düşürerek
-                            bizleri heyecanlandıran, ama gökyüzünde gururlandıran Eagles'ın ilk göz ağrısı. #AirBender..
-                        </p>
-                    </div>
+      <div class="rockets-bg-rtl">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-5 col-md-8 col-sm-10 col-12 hidden-z">
+              <div class="box">
+                <div class="front-face">
+                  <img
+                    class="img-fluid"
+                    id="img-airbender"
+                    src="Assets/img/airbender.png"
+                    alt="Kouspace Roket Takımı teknofest roket yarışması orta irtifa kategorisi Airbender isimli roket"
+                  />
                 </div>
-            </div>
-        </div>
-        <div class="rockets-bg-ltr">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-5 col-md-8 col-sm-10 col-12 hidden-z">
-                        <div class="box">
-                            <div class="front-face"><img class="img-fluid" id="img-yadigar" src="Assets/img/yadigar.png"
-                                    alt="Kouspace roket takımı teknofest roket yarışması orta irtifa kategorisi yadigar isimli roket">
-                            </div>
-                            <div class="back-face"> <video muted autoplay loop>
-                                    <source src="Assets/img/yadigarr.mp4" type="video/mp4">
-                                </video> </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-8 col-lg-7 col-md-11 col-sm-12 rocket-text hidden-z">
-                        <h2 class="display-3">Y Â D I G A R</h2>
-                        <p>Şu ana kadar ürettiğimiz en büyük roket. 306 cm. M2020 motor, yaklaşık 28kg
-                            ağırlık. Max
-                            hız 0.8 Mach. Rampa çıkış hızı 33 m/s. Çift yönlü CO2 kurtarma. Fiberglass üst gövde.
-                            Karbonfiber alt
-                            gövde, kanatçıklar ve burun. İçerisinde 4 kg discovery rover. Kuzgun'un ilk göz ağrısı.
-                            Apogee de
-                            bilinmeyen bir sebepten dolayı yer istasyonu ile iletişimi kesti. Ardından balistik
-                            oldu.
-                            Uçuş sırasında
-                            okuduğumuz hız verisinden transonik hıza geçtiğini öğrendik. Fakat sebep bu mu hala
-                            bilmiyoruz...
-                            #Yadigar.
-                        </p>
-
-                    </div>
+                <div class="back-face">
+                  <video muted autoplay loop>
+                    <source src="Assets/img/airbender.mp4" type="video/mp4" />
+                  </video>
                 </div>
+              </div>
             </div>
+            <div
+              class="col-xl-8 col-lg-7 col-md-11 col-sm-12 rocket-text hidden-z"
+            >
+              <h2 class="display-3">A I R B E N D E R</h2>
+              <p>
+                M1545 motora sahip şu ana kadar görev yapmış tek roket. 130mm
+                dış çap, 305cm uzunluk. Burundan çift kademeli 70 cm yaylı
+                kurtarma. Üçgen aviyonik blok, mıknatısla aktifleştime. 3
+                karbonfiber kanatçık. Karbonfiber burun konisi, sholder raylı.
+                Fiberglass üst gövde. Karbonfiber pürüzsüz alt gövde. Yaklaşık
+                27 kg ağırlık. Jst ile kauçuklu yuvalara oturtulmuş aviyonik
+                sistem. Sınıfının en iyi roketi. Hava bükücü. Airbender. 🚀 120
+                cm alt gövde. 150 cm üst gövde. 35 cm burun. Step motorlarla
+                aktifleştirilen kurtarma sistemi. Rengarenk paraşütler. Fıstık
+                yeşili aviyonik blok. Baş belası fiberglass payload.
+                Firebenderın büyük abisi. Kartal gözlü, sert bakışlı. Rampada
+                payload düşürerek bizleri heyecanlandıran, ama gökyüzünde
+                gururlandıran Eagles'ın ilk göz ağrısı. #AirBender..
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="rockets-bg-rtl">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-5 col-md-8 col-sm-10 col-12 hidden-z">
-                        <div class="box">
-                            <div class="front-face"><img class="img-fluid" id="img-yanki" src="Assets/img/yanki.png"
-                                    alt="Kouspace roket takımı teknofest roket yarışması Yankı isimli roketi">
-                            </div>
-                            <div class="back-face"> <video muted autoplay loop>
-                                    <source src="Assets/img/yanki.mp4" type="video/mp4">
-                                </video> </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-8 col-lg-7 col-md-11 col-sm-12 rocket-text hidden-z">
-                        <h2 class="display-3">Y A N K I</h2>
-                        <p>Yaklaşık 29 kg ağırlığa ve 146mm çapa sahip şu ana kadar yaptığımız en
-                            ağır
-                            ve en tombul
-                            roket. M2020 motor. 261cm boy. 40 cm uzunluğunda fiberglass burun. Alüminyum kalıpla
-                            üretilmiş
-                            fiberglass üst gövde, karbonfiber alt gövde. 259 m/s hız. 24.6 apogee süresi. 4mm
-                            kalınlığında tırnak
-                            bağlantılı clipped delta modeli karbonfiber kanatçıklar. İç içe geçirilmiş tek yöne
-                            bakan
-                            fakat çift
-                            yönlü ayrılma yapan yaklaşık 23 cm uzunluğunda 8 adet 12 gr CO2 tüpe sahip kurtarma
-                            sistemi.
-                            İçerisinden hava borusu
-                            geçen ve "We love Newton" mesajı içeren aviyonik
-                            blok. Her
-                            türlü veri
-                            toplama görevi ile tasarlanmış, yeşil siyah paraşüte sahip kuzgun desenli payload.
-                            Pembe,kırmızı,sarı,turuncu renkleri ile donatılmış 102 ve 325cm çaplara sahip
-                            rengarenk
-                            paraşütler.
-                            Motor kapağından buruna
-                            doğru,
-                            Kuzgun
-                            kırmızısından yine Kuzgun beyazına doğru degrade olarak tasarlanan ve üzerinde tüm
-                            emektarlarının ismi
-                            yazan 41 plakalı 004 numaralı şuana kadar en gelişmiş KouSpace roketi. Tasarımcıları
-                            tarafından kusursuz
-                            olarak tasarlanmış olmasına rağmen üzerinde yazılı isimlerin o topraklardan
-                            ayrılmaması için
-                            paraşüt
-                            açmayan ve gönlümüzde yaşattığımız son roketimiz. Onu çok özledik. #Yankı 🚀
-                        </p>
-                    </div>
+      </div>
+      <div class="rockets-bg-ltr">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-5 col-md-8 col-sm-10 col-12 hidden-z">
+              <div class="box">
+                <div class="front-face">
+                  <img
+                    class="img-fluid"
+                    id="img-yadigar"
+                    src="Assets/img/yadigar.png"
+                    alt="Kouspace roket takımı teknofest roket yarışması orta irtifa kategorisi yadigar isimli roket"
+                  />
                 </div>
+                <div class="back-face">
+                  <video muted autoplay loop>
+                    <source src="Assets/img/yadigarr.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
             </div>
+            <div
+              class="col-xl-8 col-lg-7 col-md-11 col-sm-12 rocket-text hidden-z"
+            >
+              <h2 class="display-3">Y Â D I G A R</h2>
+              <p>
+                Şu ana kadar ürettiğimiz en büyük roket. 306 cm. M2020 motor,
+                yaklaşık 28kg ağırlık. Max hız 0.8 Mach. Rampa çıkış hızı 33
+                m/s. Çift yönlü CO2 kurtarma. Fiberglass üst gövde. Karbonfiber
+                alt gövde, kanatçıklar ve burun. İçerisinde 4 kg discovery
+                rover. Kuzgun'un ilk göz ağrısı. Apogee de bilinmeyen bir
+                sebepten dolayı yer istasyonu ile iletişimi kesti. Ardından
+                balistik oldu. Uçuş sırasında okuduğumuz hız verisinden
+                transonik hıza geçtiğini öğrendik. Fakat sebep bu mu hala
+                bilmiyoruz... #Yadigar.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="rockets-bg-rtl">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-5 col-md-8 col-sm-10 col-12 hidden-z">
+              <div class="box">
+                <div class="front-face">
+                  <img
+                    class="img-fluid"
+                    id="img-yanki"
+                    src="Assets/img/yanki.png"
+                    alt="Kouspace roket takımı teknofest roket yarışması Yankı isimli roketi"
+                  />
+                </div>
+                <div class="back-face">
+                  <video muted autoplay loop>
+                    <source src="Assets/img/yanki.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-8 col-lg-7 col-md-11 col-sm-12 rocket-text hidden-z"
+            >
+              <h2 class="display-3">Y A N K I</h2>
+              <p>
+                Yaklaşık 29 kg ağırlığa ve 146mm çapa sahip şu ana kadar
+                yaptığımız en ağır ve en tombul roket. M2020 motor. 261cm boy.
+                40 cm uzunluğunda fiberglass burun. Alüminyum kalıpla üretilmiş
+                fiberglass üst gövde, karbonfiber alt gövde. 259 m/s hız. 24.6
+                apogee süresi. 4mm kalınlığında tırnak bağlantılı clipped delta
+                modeli karbonfiber kanatçıklar. İç içe geçirilmiş tek yöne bakan
+                fakat çift yönlü ayrılma yapan yaklaşık 23 cm uzunluğunda 8 adet
+                12 gr CO2 tüpe sahip kurtarma sistemi. İçerisinden hava borusu
+                geçen ve "We love Newton" mesajı içeren aviyonik blok. Her türlü
+                veri toplama görevi ile tasarlanmış, yeşil siyah paraşüte sahip
+                kuzgun desenli payload. Pembe,kırmızı,sarı,turuncu renkleri ile
+                donatılmış 102 ve 325cm çaplara sahip rengarenk paraşütler.
+                Motor kapağından buruna doğru, Kuzgun kırmızısından yine Kuzgun
+                beyazına doğru degrade olarak tasarlanan ve üzerinde tüm
+                emektarlarının ismi yazan 41 plakalı 004 numaralı şuana kadar en
+                gelişmiş KouSpace roketi. Tasarımcıları tarafından kusursuz
+                olarak tasarlanmış olmasına rağmen üzerinde yazılı isimlerin o
+                topraklardan ayrılmaması için paraşüt açmayan ve gönlümüzde
+                yaşattığımız son roketimiz. Onu çok özledik. #Yankı 🚀
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
-        <div class="container">
-            <div class="row my-1">
-                <div class="col-lg-4">
-                    <div class="footer-logo">
-                        <img src="Assets/img/kouspace.jpg" alt="Kouspace roket takımı logosu">
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="footer-menu">
-                        <ul class="flex-column">
-                            <li><a href="https://kouspace.com"><i class="fa-solid fa-igloo"></i> Anasayfa</a></li>
-                            <li><a href="roketler.html"><i class="fa-solid fa-rocket"></i> Roketler</a></li>
-                            <li><a href="sponsor.html"><i class="fa-solid fa-handshake"></i> Sponsorlar</a></li>
-                            <li><a href="takim.html"><i class="fa-solid fa-circle-info"></i> Takım</a></li>
-                            <li><a href="iletisim.html"><i class="fa-solid fa-phone-volume"></i> İletişim</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="footer-info">
-                        <ul>
-                            <a href="mailto:info@kouspace.com">
-                                <li> Mail: info@kouspace.com
-                                </li>
-                            </a>
-                            <li>Telefon: +90 534 414 6970</li>
-                            <li>Adres: Sanayi, Ömer Türkçakal Blv. No:36, 41040 İzmit/Kocaeli</li>
-                        </ul>
-                        <div class="fa-2x" id="social-media-icons">
-                            <a href="https://instagram.com/kouspace"> <i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/company/mbk-kouspace-roket-takimi"> <i
-                                    class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://twitter.com/kou_space"> <i class="fa-brands fa-square-twitter"></i></a>
-                            <a href="https://www.youtube.com/@mbkkouspacerokettakm9166"> <i
-                                    class="fa-brands fa-youtube"></i></a>
-                        </div>
-                    </div>
-
-                </div>
+      <div class="container">
+        <div class="row my-1">
+          <div class="col-lg-4">
+            <div class="footer-logo">
+              <img
+                src="Assets/img/kouspace.jpg"
+                alt="Kouspace roket takımı logosu"
+              />
             </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-menu">
+              <ul class="flex-column">
+                <li>
+                  <a href="https://kouspace.com.tr"
+                    ><i class="fa-solid fa-igloo"></i> Anasayfa</a
+                  >
+                </li>
+                <li>
+                  <a href="roketler.html"
+                    ><i class="fa-solid fa-rocket"></i> Roketler</a
+                  >
+                </li>
+                <li>
+                  <a href="sponsor.html"
+                    ><i class="fa-solid fa-handshake"></i> Sponsorlar</a
+                  >
+                </li>
+                <li>
+                  <a href="takim.html"
+                    ><i class="fa-solid fa-circle-info"></i> Takım</a
+                  >
+                </li>
+                <li>
+                  <a href="iletisim.html"
+                    ><i class="fa-solid fa-phone-volume"></i> İletişim</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-info">
+              <ul>
+                <a href="mailto:info@kouspace.com.tr">
+                  <li>Mail: info@kouspace.com.tr</li>
+                </a>
+                <li>Telefon: +90 534 414 6970</li>
+                <li>
+                  Adres: Sanayi, Ömer Türkçakal Blv. No:36, 41040 İzmit/Kocaeli
+                </li>
+              </ul>
+              <div class="fa-2x" id="social-media-icons">
+                <a href="https://instagram.com/kouspace">
+                  <i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/company/mbk-kouspace-roket-takimi"
+                >
+                  <i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://twitter.com/kou_space">
+                  <i class="fa-brands fa-square-twitter"></i
+                ></a>
+                <a href="https://www.youtube.com/@mbkkouspacerokettakm9166">
+                  <i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="copyright-text">
-            <p> Copyright @2022 KouSpace Roket Takımı | Tüm Hakları Saklıdır.</p>
-        </div>
+      </div>
+      <div class="copyright-text">
+        <p>Copyright @2022 KouSpace Roket Takımı | Tüm Hakları Saklıdır.</p>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="Assets/js/main.js"></script>
     <script src="Assets/Bootstrap/bootstrap.min.js"></script>
-</body>
-
+  </body>
 </html>

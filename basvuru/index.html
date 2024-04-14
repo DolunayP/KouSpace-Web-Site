@@ -1,129 +1,207 @@
 <!DOCTYPE html>
 <html lang="tr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-        content="Bizimle sayfamızdaki form aracılığıyla, sosyal medya hesaplarımızdan yada aşağıda bulunan telefondan iletişime geçebilirsiniz.">
-    <meta name="robots" content="all">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Bizimle sayfamızdaki form aracılığıyla, sosyal medya hesaplarımızdan yada aşağıda bulunan telefondan iletişime geçebilirsiniz."
+    />
+    <meta name="robots" content="all" />
     <title>Başvuru</title>
-    <link rel="icon" href="../Assets/img/tab-icon.png">
-    <link rel="stylesheet" href="../Assets/Bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../Assets/css/style.css">
-    <script src="https://kit.fontawesome.com/5a4d51e004.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../Assets/img/tab-icon.png" />
+    <link rel="stylesheet" href="../Assets/Bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../Assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/5a4d51e004.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-nav fixed-top" id="navbar">
-        <div class="container">
-            <a class="navbar-brand fs-3 fw-bold" href="https://kouspace.com" id="navTextKouspace"> <img
-                    src="../Assets/img/kouspace_logo.png" alt="Kouspace takım logosu" id="navLogoKouspace">
-                KouSpace</a>
-            <button class="navbar-toggler" onClick="togglerBackground()" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                aria-expanded="false navigation">
-                <span class="navbar-toggler-icon">
-                </span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <ul class="navbar-nav d-flex align-items-center justify-content-center">
-                    <li>
-                        <a class="nav-link mx-1" aria-current="page" href="https://kouspace.com"> <i
-                                class="fa-solid fa-igloo"></i> Anasayfa </a>
-                    </li>
-                    <li>
-                        <a class="nav-link mx-1" href="/roketler.html"> <i class="fa-solid fa-rocket"></i> Roketler
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link mx-1" href="/sponsor.html"> <i class="fa-solid fa-handshake"></i>
-                            Sponsorlar
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link mx-1" href="/takim.html"> <i class="fa-solid fa-people-group"></i> Takım
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link mx-1" href="/iletisim.html"> <i class="fa-solid fa-phone-volume"></i>
-                            İletişim
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link mx-1" href="/basvuru"> <i class="fa-solid fa-file"></i> Başvuru
-                        </a>
-                    </li>
-                </ul>
-            </div>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-nav fixed-top"
+      id="navbar"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand fs-3 fw-bold"
+          href="https://kouspace.com.tr"
+          id="navTextKouspace"
+        >
+          <img
+            src="../Assets/img/kouspace_logo.png"
+            alt="Kouspace takım logosu"
+            id="navLogoKouspace"
+          />
+          KouSpace</a
+        >
+        <button
+          class="navbar-toggler"
+          onClick="togglerBackground()"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false navigation"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <ul
+            class="navbar-nav d-flex align-items-center justify-content-center"
+          >
+            <li>
+              <a
+                class="nav-link mx-1"
+                aria-current="page"
+                href="https://kouspace.com.tr"
+              >
+                <i class="fa-solid fa-igloo"></i> Anasayfa
+              </a>
+            </li>
+            <li>
+              <a class="nav-link mx-1" href="/roketler.html">
+                <i class="fa-solid fa-rocket"></i> Roketler
+              </a>
+            </li>
+            <li>
+              <a class="nav-link mx-1" href="/sponsor.html">
+                <i class="fa-solid fa-handshake"></i>
+                Sponsorlar
+              </a>
+            </li>
+            <li>
+              <a class="nav-link mx-1" href="/takim.html">
+                <i class="fa-solid fa-people-group"></i> Takım
+              </a>
+            </li>
+            <li>
+              <a class="nav-link mx-1" href="/iletisim.html">
+                <i class="fa-solid fa-phone-volume"></i>
+                İletişim
+              </a>
+            </li>
+            <li>
+              <a class="nav-link mx-1" href="/basvuru">
+                <i class="fa-solid fa-file"></i> Başvuru
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <section id="apply-sect">
-        <div class="apply">
-            <div class="apply-banner"><img src="../Assets/img/apply-banner.png" alt=""></div>
-            <div class="black-50"></div>
-            <div class="apply-form">
-                <iframe tabindex="-1" aria-hidden="true"
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSfJY6VIAg3pVYBfbkQmveIjH549gpyqUOz-U7v14Q2oKwewTA/viewform?embedded=true"
-                    width="90%" frameborder="0" height="6800" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
-            </div>
+      <div class="apply">
+        <div class="apply-banner">
+          <img src="../Assets/img/apply-banner.png" alt="" />
         </div>
+        <div class="black-50"></div>
+        <div class="apply-form">
+          <iframe
+            tabindex="-1"
+            aria-hidden="true"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfJY6VIAg3pVYBfbkQmveIjH549gpyqUOz-U7v14Q2oKwewTA/viewform?embedded=true"
+            width="90%"
+            frameborder="0"
+            height="6800"
+            marginheight="0"
+            marginwidth="0"
+            >Yükleniyor…</iframe
+          >
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
-        <div class="container">
-            <div class="row my-1">
-                <div class="col-lg-4">
-                    <div class="footer-logo">
-                        <img src="../Assets/img/kouspace.jpg" alt="Kouspace takım logosu">
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="footer-menu">
-                        <ul class="flex-column">
-                            <li><a href="https://kouspace.com"><i class="fa-solid fa-igloo"></i> Anasayfa</a></li>
-                            <li><a href="/roketler.html"><i class="fa-solid fa-rocket"></i> Roketler</a></li>
-                            <li><a href="/sponsor.html"><i class="fa-solid fa-handshake"></i> Sponsorlar</a></li>
-                            <li><a href="/takim.html"><i class="fa-solid fa-circle-info"></i> Takım</a></li>
-                            <li><a href="/iletisim.html"><i class="fa-solid fa-phone-volume"></i> İletişim</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="footer-info">
-                        <ul>
-                            <a href="mailto:info@kouspace.com">
-                                <li> Mail: info@kouspace.com
-                                </li>
-                            </a>
-                            <li>Telefon: +90 534 414 6970</li>
-                            <li>Adres: Sanayi, Ömer Türkçakal Blv. No:36, 41040 İzmit/Kocaeli</li>
-                        </ul>
-                        <div class="fa-2x" id="social-media-icons">
-                            <a href="https://instagram.com/kouspace"> <i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/company/mbk-kouspace-roket-takimi"> <i
-                                    class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://twitter.com/kou_space"> <i class="fa-brands fa-square-twitter"></i></a>
-                            <a href="https://www.youtube.com/@mbkkouspacerokettakm9166"> <i
-                                    class="fa-brands fa-youtube"></i></a>
-                        </div>
-                    </div>
-
-                </div>
+      <div class="container">
+        <div class="row my-1">
+          <div class="col-lg-4">
+            <div class="footer-logo">
+              <img
+                src="../Assets/img/kouspace.jpg"
+                alt="Kouspace takım logosu"
+              />
             </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-menu">
+              <ul class="flex-column">
+                <li>
+                  <a href="https://kouspace.com.tr"
+                    ><i class="fa-solid fa-igloo"></i> Anasayfa</a
+                  >
+                </li>
+                <li>
+                  <a href="/roketler.html"
+                    ><i class="fa-solid fa-rocket"></i> Roketler</a
+                  >
+                </li>
+                <li>
+                  <a href="/sponsor.html"
+                    ><i class="fa-solid fa-handshake"></i> Sponsorlar</a
+                  >
+                </li>
+                <li>
+                  <a href="/takim.html"
+                    ><i class="fa-solid fa-circle-info"></i> Takım</a
+                  >
+                </li>
+                <li>
+                  <a href="/iletisim.html"
+                    ><i class="fa-solid fa-phone-volume"></i> İletişim</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-info">
+              <ul>
+                <a href="mailto:info@kouspace.com.tr">
+                  <li>Mail: info@kouspace.com.tr</li>
+                </a>
+                <li>Telefon: +90 534 414 6970</li>
+                <li>
+                  Adres: Sanayi, Ömer Türkçakal Blv. No:36, 41040 İzmit/Kocaeli
+                </li>
+              </ul>
+              <div class="fa-2x" id="social-media-icons">
+                <a href="https://instagram.com/kouspace">
+                  <i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/company/mbk-kouspace-roket-takimi"
+                >
+                  <i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://twitter.com/kou_space">
+                  <i class="fa-brands fa-square-twitter"></i
+                ></a>
+                <a href="https://www.youtube.com/@mbkkouspacerokettakm9166">
+                  <i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="copyright-text">
-            <p> Copyright @2022 KouSpace Roket Takımı | Tüm Hakları Saklıdır.</p>
-        </div>
+      </div>
+      <div class="copyright-text">
+        <p>Copyright @2022 KouSpace Roket Takımı | Tüm Hakları Saklıdır.</p>
+      </div>
     </footer>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByEh0JsmiNDoGxOm_mzVki3IPPGoLux_4&callback=initMap"
-        async defer></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByEh0JsmiNDoGxOm_mzVki3IPPGoLux_4&callback=initMap"
+      async
+      defer
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="../Assets/js/main.js"></script>
     <script src="../Assets/Bootstrap/bootstrap.min.js"></script>
-</body>
-
+  </body>
 </html>
